@@ -1,48 +1,27 @@
 <template>
   <div class="login">
-    <form
-      class="login-form"
-      action="login"
-      method="get"
-      id="login"
-    >
-      <div class="be-the-part">
-        Be the part of the largest work management platform
-      </div>
-      <div class="login-username">
-        <div class="username">Username</div>
-          <input
-            class="login-input"
-            type="text"
-            defaultValue=""
-            maxlength="20"
-            minlength="4"
-            required
-            autofocus
-            id="login"
-          />
-      </div>
-      <div class="login-password">
-        <div class="username">Password</div>
-          <input
-            class="login-input"
-            type="text"
-            defaultValue=""
-            maxlength="20"
-            minlength="4"
-            autofocus
-            id="login"
-          />
-      </div>
-      <div class="dont-have-account-container">
-        <span>Don't have account? </span>
-        <span class="join-us-now">Join us now.</span>
-      </div>
-      <button class="login-btn" id="login" formmethod="get">
-        <div class="login1">Login</div>
-      </button>
-      <div class="copyright-2023">Copyright 2023</div>
-    </form>
+    <div v-if="!registerActive" class="card login" v-bind:class="{ error: emptyFields }">
+      <form class="login-form" id="login">
+        <h4 class="logos" id="login">Co_perate</h4>
+        <div class="be-the-part">
+          Be the part of the largest work management platform
+        </div>
+        <div class="login-username">
+          <div class="username">Username</div>
+            <input v-model="emailLogin" class="login-input" type="text" required id="login"/>
+        </div>
+        <div class="login-password">
+          <div class="username">Password</div>
+            <input v-model="passwordLogin" class="login-input" type="password" autofocus id="login"/>
+        </div>
+        <div class="dont-have-account-container">
+          <span>Don't have account? </span>
+          <span class="join-us-now">Join us now.</span>
+        </div>
+        <router-link to="/home" type="submit" class="login-btn" id="login" @click="doLogin">Login</router-link>
+        <div class="copyright-2023">Copyright 2023</div>
+      </form>
+    </div>
     <h1 class="logo" id="login">Co_<br>per<br>ate</h1>
   </div>
 </template>
@@ -118,6 +97,12 @@
     left: 7.83%;
     border-radius: var(--br-8xs);
     background-color: var(--orange-btn);
+    font-size: var(--btn-text-size);
+    font-weight: 500;
+    font-family: var(--btn-text);
+    color: var(--white);
+    text-align: center;
+    display: inline-block;
   }
   .login-input {
     border: none;
@@ -186,6 +171,9 @@
     width: 8.81rem;
     height: 3.5rem;
   }
+  .logos {
+    visibility: hidden;
+  }
   .login {
     position: relative;
     background: linear-gradient(133.19deg, #a9f4ff, #1b9cd3);
@@ -196,6 +184,30 @@
     color: var(--grey-txt);
     font-family: var(--text-p);
   }
+  .error {
+   animation-name: errorShake;
+   animation-duration: 0.3s;
+  }
+
+  @keyframes errorShake {
+    0% {
+        transform: translateX(-25px);
+    }
+    25% {
+        transform: translateX(25px);
+    }
+    50% {
+        transform: translateX(-25px);
+    }
+    75% {
+        transform: translateX(25px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+
+
 
   /* responsive media */
 
@@ -238,19 +250,39 @@
    }
 }
 
-  @media (min-width: 1024px) {
-  header {
+  @media (max-width: 600px) {
+    .login-form {
+    position: absolute;
+    width: 100%;
+    top: 0rem;
+    right: 0rem;
+    left: 0rem;
+    background-color: var(--white);
+    height: 100%;
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    flex-direction: column;
+    padding: 6.75rem 3.75rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.81rem;
   }
   .logo {
-    margin: 0 2rem 0 0;
+    visibility: hidden;
   }
-  header .wrapper {
+  .logos {
+    visibility: visible;
+    margin: 0;
+    position: absolute;
+    top: 2.38rem;
+    left: 2.38rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: var(--font-lexend-zetta);
     display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    width: 5.81rem;
+    height: 1.5rem;
   }
 }
 

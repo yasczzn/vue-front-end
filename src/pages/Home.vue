@@ -9,39 +9,32 @@
     <img class="home-child2" alt="" src="/vector-1.svg" />
     <img class="group-icon" alt="" src="/group-6.svg" />
     <div class="home1">
-      <div class="home2">Home</div>
-      <div class="rectangle-div" />
       <img class="vector-icon1" alt="" src="/vector.svg" />
+      <div class="home2">Home</div>
     </div>
     <div class="projects">
-      <div class="home2">Projects</div>
-      <div class="rectangle-div" />
       <img class="vector-icon2" alt="" src="/vector1.svg" />
+      <div class="home2">Projects</div>
     </div>
     <div class="my-task">
-      <div class="home2">My Task</div>
-      <div class="rectangle-div" />
       <img class="vector-icon3" alt="" src="/vector2.svg" />
+      <div class="home2">My Task</div>
     </div>
     <div class="portfolio">
-      <div class="home2">Portfolio</div>
-      <div class="rectangle-div" />
       <img class="vector-icon4" alt="" src="/vector3.svg" />
+      <div class="home2">Portfolio</div>
     </div>
     <div class="my-workspace">
-      <div class="home2">My Workspace</div>
-      <div class="rectangle-div" />
       <img class="group-icon1" alt="" src="/group.svg" />
+      <div class="home2">My Workspace</div>
     </div>
     <div class="milestone">
-      <div class="home2">Milestone</div>
-      <div class="rectangle-div" />
       <img class="vector-icon5" alt="" src="/vector4.svg" />
+      <div class="home2">Milestone</div>
     </div>
     <div class="settings">
-      <div class="home2">Settings</div>
-      <div class="rectangle-div" />
       <img class="vector-icon6" alt="" src="/vector5.svg" />
+      <div class="home2">Settings</div>
     </div>
     <img class="profile-icon" alt="" src="/profile.svg" :onClick="openFrame" />
     <div class="welcome-back-user-parent">
@@ -336,7 +329,7 @@
     width: 16.81rem;
   }
   .home2 {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
     top: 0%;
@@ -367,6 +360,7 @@
   }
   .home1 {
     position: absolute;
+    justify-content: space-around;
     top: 7.38rem;
     left: 0.06rem;
     width: 16.94rem;
