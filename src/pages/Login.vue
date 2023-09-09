@@ -1,60 +1,48 @@
 <template>
   <div class="login">
-    <!-- <section class="rectangle-parent" id="login" lineOnTouch="true">
-      <div class="group-child" />
-      <div class="group-item" />
-      <div class="group-inner" />
-      <div class="rectangle-div" />
-      <div class="group-child1" />
-      <div class="group-child2" />
-      <div class="group-child3" />
-      <div class="group-child4" />
-      <div class="group-child5" />
-      <div class="group-child6" />
-      <div class="group-child7" />
-      <div class="group-child8" />
-      <div class="group-child9" />
-    </section> -->
-    <div class="rectangle-group">
-      <div class="group-child10" />
-      <div class="copyright-2023">Copyright 2023</div>
+    <form
+      class="login-form"
+      action="login"
+      method="get"
+      id="login"
+    >
+      <div class="be-the-part">
+        Be the part of the largest work management platform
+      </div>
+      <div class="login-username">
+        <div class="username">Username</div>
+          <input
+            class="login-input"
+            type="text"
+            defaultValue=""
+            maxlength="20"
+            minlength="4"
+            required
+            autofocus
+            id="login"
+          />
+      </div>
+      <div class="login-password">
+        <div class="username">Password</div>
+          <input
+            class="login-input"
+            type="text"
+            defaultValue=""
+            maxlength="20"
+            minlength="4"
+            autofocus
+            id="login"
+          />
+      </div>
       <div class="dont-have-account-container">
         <span>Don't have account? </span>
         <span class="join-us-now">Join us now.</span>
       </div>
-      <button class="rectangle-container" id="login" formmethod="get">
-        <div class="group-child11" />
+      <button class="login-btn" id="login" formmethod="get">
         <div class="login1">Login</div>
       </button>
-      <div class="group-div">
-        <input
-          class="rectangle-input"
-          type="text"
-          defaultValue=""
-          maxlength="20"
-          minlength="4"
-          required
-          autofocus
-          id="login"
-        />
-        <div class="username">Username</div>
-      </div>
-      <div class="rectangle-parent1">
-        <input
-          class="rectangle-input"
-          type="text"
-          defaultValue=""
-          maxlength="20"
-          minlength="4"
-          autofocus
-          id="login"
-        />
-        <div class="username">Password</div>
-      </div>
-      <div class="be-the-part">
-        Be the part of the largest work management platform
-      </div>
-    </div>
+      <div class="copyright-2023">Copyright 2023</div>
+    </form>
     <h1 class="logo" id="login">Co_<br>per<br>ate</h1>
   </div>
 </template>
@@ -66,152 +54,23 @@
   });
 </script>
 <style scoped>
-  .group-child {
+  .login-form {
     position: absolute;
+    width: calc(100% - 812px);
     top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 15.51rem;
-    height: 17.4rem;
-  }
-  .group-item {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 18.5rem;
-    height: 20.3rem;
-  }
-  .group-inner {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 21.48rem;
-    height: 23.19rem;
-  }
-  .rectangle-div {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 24.46rem;
-    height: 26.09rem;
-  }
-  .group-child1 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 27.45rem;
-    height: 28.99rem;
-  }
-  .group-child2 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 30.43rem;
-    height: 31.89rem;
-  }
-  .group-child3 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 33.41rem;
-    height: 34.79rem;
-  }
-  .group-child4 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 36.4rem;
-    height: 37.69rem;
-  }
-  .group-child5 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 39.38rem;
-    height: 40.59rem;
-  }
-  .group-child6 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 42.36rem;
-    height: 43.49rem;
-  }
-  .group-child7 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 45.35rem;
-    height: 46.39rem;
-  }
-  .group-child8 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 48.33rem;
-    height: 49.29rem;
-  }
-  .group-child9 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 51.31rem;
-    height: 52.19rem;
-  }
-  .rectangle-parent {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    width: 51.31rem;
-    height: 52.19rem;
-  }
-  .group-child10 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
+    right: 10.13rem;
+    left: 40.63rem;
     border-radius: 2px;
     background-color: var(--white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 21.56rem;
     height: 41.25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 6.75rem 3.75rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.81rem;
   }
   .copyright-2023 {
     position: absolute;
@@ -232,19 +91,8 @@
     width: 11.38rem;
     height: 1rem;
   }
-  .group-child11 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    left: 0%;
-    border-radius: var(--br-8xs);
-    background-color: var(--orange-btn);
-  }
   .login1 {
-    position: absolute;
+    position: static;
     top: 0.81rem;
     left: 3.75rem;
     font-size: var(--btn-text-size);
@@ -256,7 +104,7 @@
     width: 10.75rem;
     height: 1.25rem;
   }
-  .rectangle-container {
+  .login-btn {
     cursor: pointer;
     border: none;
     padding: 0;
@@ -268,8 +116,10 @@
     right: 8.12%;
     bottom: 27.88%;
     left: 7.83%;
+    border-radius: var(--br-8xs);
+    background-color: var(--orange-btn);
   }
-  .rectangle-input {
+  .login-input {
     border: none;
     background-color: var(--white-txt);
     position: absolute;
@@ -290,7 +140,7 @@
     width: 5.31rem;
     height: 1.25rem;
   }
-  .group-div {
+  .login-username {
     position: absolute;
     height: 10%;
     width: 84.1%;
@@ -301,7 +151,7 @@
     font-size: var(--btn-text-size);
     font-family: var(--btn-text);
   }
-  .rectangle-parent1 {
+  .login-password {
     position: absolute;
     height: 10%;
     width: 84.1%;
@@ -313,7 +163,7 @@
     font-family: var(--btn-text);
   }
   .be-the-part {
-    position: absolute;
+    position: static;
     top: 7.75rem;
     left: 1rem;
     text-transform: uppercase;
@@ -321,13 +171,6 @@
     display: inline-block;
     width: 19.13rem;
     height: 2.44rem;
-  }
-  .rectangle-group {
-    position: absolute;
-    top: 0rem;
-    left: 49.56rem;
-    width: 21.56rem;
-    height: 41.25rem;
   }
   .logo {
     margin: 0;
@@ -354,18 +197,56 @@
     font-family: var(--text-p);
   }
 
-  /* media */
+  /* responsive media */
+
+  @media screen and (max-width: 576px) {
+   nav{
+       padding: 0px 40px;
+   }
+   nav .basic, nav .logOut{
+       display: none;
+   }
+   nav .resp, nav .menu-toggle, nav .logo > img{
+       z-index: 999;
+   }
+   nav .resp{
+       display: flex;
+       position: absolute;
+       width: 100%;
+       right: 0;
+       top:0;
+       left:0;
+       background-color: #003049;
+       flex-direction: column;
+       align-items: center;
+       height: 80vh;
+       justify-content:space-evenly;
+       transform: translateY(-100%);
+       transition: all 1s;
+   }
+   nav .resp.slide{
+       transform: translateY(0);
+   }
+   nav .resp li .logout-btn{
+       background-color: none;
+       box-shadow: none;
+   }
+   .menu-toggle{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+}
+
   @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
   .logo {
     margin: 0 2rem 0 0;
   }
-
   header .wrapper {
     display: flex;
     place-items: flex-start;

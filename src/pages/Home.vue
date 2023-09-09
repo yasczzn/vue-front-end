@@ -1,356 +1,840 @@
 <template>
-    <div class="login">
-      <section class="rectangle-parent" id="login" lineOnTouch="true">
-        <div class="group-child" />
-        <div class="group-item" />
-        <div class="group-inner" />
-        <div class="rectangle-div" />
-        <div class="group-child1" />
-        <div class="group-child2" />
-        <div class="group-child3" />
-        <div class="group-child4" />
-        <div class="group-child5" />
-        <div class="group-child6" />
-        <div class="group-child7" />
-        <div class="group-child8" />
-        <div class="group-child9" />
-      </section>
-      <div class="rectangle-group">
-        <div class="group-child10" />
-        <div class="copyright-2023">Copyright 2023</div>
-        <div class="dont-have-account-container">
-          <span>Don't have account? </span>
-          <span class="join-us-now">Join us now.</span>
-        </div>
-        <button class="rectangle-container" id="login" formmethod="get">
-          <div class="group-child11" />
-          <div class="login1">Login</div>
-        </button>
-        <div class="group-div">
-          <input
-            class="rectangle-input"
-            type="text"
-            defaultValue=""
-            maxlength="20"
-            minlength="4"
-            required
-            autofocus
-            id="login"
-          />
-          <div class="username">Username</div>
-        </div>
-        <div class="rectangle-parent1">
-          <input
-            class="rectangle-input"
-            type="text"
-            defaultValue=""
-            maxlength="20"
-            minlength="4"
-            autofocus
-            id="login"
-          />
-          <div class="username">Password</div>
-        </div>
-        <div class="be-the-part">
-          Be the part of the largest work management platform
+  <div class="home">
+    <nav class="home-child" id="home-nav" />
+    <section class="home-item" />
+    <div class="home-inner" />
+    <h1 class="co-perate" id="logo">Co_perate</h1>
+    <img class="vector-icon" alt="" src="/vector-1.svg" />
+    <img class="home-child1" alt="" src="/vector-1.svg" />
+    <img class="home-child2" alt="" src="/vector-1.svg" />
+    <img class="group-icon" alt="" src="/group-6.svg" />
+    <div class="home1">
+      <div class="home2">Home</div>
+      <div class="rectangle-div" />
+      <img class="vector-icon1" alt="" src="/vector.svg" />
+    </div>
+    <div class="projects">
+      <div class="home2">Projects</div>
+      <div class="rectangle-div" />
+      <img class="vector-icon2" alt="" src="/vector1.svg" />
+    </div>
+    <div class="my-task">
+      <div class="home2">My Task</div>
+      <div class="rectangle-div" />
+      <img class="vector-icon3" alt="" src="/vector2.svg" />
+    </div>
+    <div class="portfolio">
+      <div class="home2">Portfolio</div>
+      <div class="rectangle-div" />
+      <img class="vector-icon4" alt="" src="/vector3.svg" />
+    </div>
+    <div class="my-workspace">
+      <div class="home2">My Workspace</div>
+      <div class="rectangle-div" />
+      <img class="group-icon1" alt="" src="/group.svg" />
+    </div>
+    <div class="milestone">
+      <div class="home2">Milestone</div>
+      <div class="rectangle-div" />
+      <img class="vector-icon5" alt="" src="/vector4.svg" />
+    </div>
+    <div class="settings">
+      <div class="home2">Settings</div>
+      <div class="rectangle-div" />
+      <img class="vector-icon6" alt="" src="/vector5.svg" />
+    </div>
+    <img class="profile-icon" alt="" src="/profile.svg" :onClick="openFrame" />
+    <div class="welcome-back-user-parent">
+      <h1 class="welcome-back-user" id="login">Welcome back, user!</h1>
+      <h1 class="your-progress-in" id="login">your progress in 9 september</h1>
+    </div>
+    <section class="table" id="home-table">
+      <div class="div">
+        <div class="frame-parent">
+          <div class="show-parent">
+            <div class="show">Show</div>
+            <div class="parent">
+              <div class="show">5</div>
+              <img
+                class="bicaret-down-fill-icon"
+                alt=""
+                src="/bicaretdownfill.svg"
+              />
+            </div>
+            <div class="show">entries</div>
+          </div>
+          <div class="akar-iconssearch-parent">
+            <img class="akar-iconssearch" alt="" src="/akariconssearch.svg" />
+            <div class="search">Search...</div>
+          </div>
+          <button class="fluentadd-16-filled-parent" autofocus id="home-add">
+            <img class="akar-iconssearch" alt="" src="/fluentadd16filled.svg" />
+            <b class="add-customer">Add Customer</b>
+          </button>
         </div>
       </div>
-      <h1 class="logo" id="login">Co_<br>per<br>ate</h1>
-    </div>
-  </template>
-  <script>
+      <div class="table1">
+        <div class="frame-group">
+          <div class="tracking-id-wrapper">
+            <b class="tracking-id">Tracking ID</b>
+          </div>
+          <div class="customer-parent">
+            <b class="tracking-id">Customer</b>
+            <img class="akar-iconssearch" alt="" src="/bxssortalt.svg" />
+          </div>
+          <div class="date-parent">
+            <b class="tracking-id">Date</b>
+            <img class="akar-iconssearch" alt="" src="/bxssortalt1.svg" />
+          </div>
+          <div class="amount-wrapper">
+            <b class="tracking-id">Amount</b>
+          </div>
+          <div class="amount-wrapper">
+            <b class="tracking-id">Payment Mode</b>
+          </div>
+          <div class="customer-parent">
+            <b class="tracking-id">Status</b>
+            <img class="akar-iconssearch" alt="" src="/bxssortalt2.svg" />
+          </div>
+          <div class="tracking-id-wrapper">
+            <b class="tracking-id">Action</b>
+          </div>
+        </div>
+        <div class="frame-container">
+          <div class="tracking-id-wrapper">
+            <div class="search">#20462</div>
+          </div>
+          <div class="matt-dickerson-wrapper">
+            <div class="search">Matt Dickerson</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">13/05/2022</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">$4.95</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">Tranfer Bank</div>
+          </div>
+          <div class="frame-wrapper">
+            <h4 class="delivered-wrapper" id="home-ket">
+              <div class="show">Delivered</div>
+            </h4>
+          </div>
+          <div class="frame-div">
+            <div class="edit-1-2-parent">
+              <img class="trash-2-2-icon" alt="" src="/edit-1-2.svg" />
+              <img class="trash-2-2-icon" alt="" src="/trash2-2.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="frame-group">
+          <div class="tracking-id-wrapper">
+            <div class="search">#18933</div>
+          </div>
+          <div class="matt-dickerson-wrapper">
+            <div class="search">Wiktoria</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">22/05/2022</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">$8.95</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">Cash on Delivery</div>
+          </div>
+          <div class="frame-wrapper">
+            <h4 class="delivered-wrapper" id="home-ket">
+              <div class="show">Delivered</div>
+            </h4>
+          </div>
+          <div class="frame-div">
+            <div class="edit-1-2-parent">
+              <img class="trash-2-2-icon" alt="" src="/edit-1-21.svg" />
+              <img class="trash-2-2-icon" alt="" src="/trash2-21.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="frame-container">
+          <div class="tracking-id-wrapper">
+            <div class="search">#45169</div>
+          </div>
+          <div class="matt-dickerson-wrapper">
+            <div class="search">Trixie Byrd</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">15/06/2022</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">$1,149.95</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">Cash on Delivery</div>
+          </div>
+          <div class="frame-wrapper3">
+            <h4 class="process-wrapper" id="home-ket">
+              <div class="show">Process</div>
+            </h4>
+          </div>
+          <div class="frame-div">
+            <div class="edit-1-2-parent">
+              <img class="trash-2-2-icon" alt="" src="/edit-1-21.svg" />
+              <img class="trash-2-2-icon" alt="" src="/trash2-21.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="frame-group">
+          <div class="tracking-id-wrapper">
+            <div class="search">#34304</div>
+          </div>
+          <div class="matt-dickerson-wrapper">
+            <div class="search">Brad Mason</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">06/09/2022</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">$899.95</div>
+          </div>
+          <div class="amount-wrapper">
+            <div class="search">Tranfer Bank</div>
+          </div>
+          <div class="frame-wrapper3">
+            <h4 class="process-wrapper" id="home-ket">
+              <div class="show">Process</div>
+            </h4>
+          </div>
+          <div class="frame-div">
+            <div class="edit-1-2-parent">
+              <img class="trash-2-2-icon" alt="" src="/edit-1-21.svg" />
+              <img class="trash-2-2-icon" alt="" src="/trash2-21.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div14">
+        <div class="show-parent">
+          <div class="previous">Previous</div>
+          <div class="wrapper10">
+            <div class="div15">1</div>
+          </div>
+          <div class="wrapper11">
+            <div class="div15">2</div>
+          </div>
+          <div class="wrapper11">
+            <div class="div15">3</div>
+          </div>
+          <div class="previous">Next</div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright-2023">Copyright 2023</div>
+  </div>
+  <div v-if="isFrameOpen">
+    <PortalPopup
+      overlayColor="rgba(113, 113, 113, 0.3)"
+      placement="Centered"
+      :onOutsideClick="closeFrame"
+    >
+      <frame :onClose="closeFrame" />
+    </PortalPopup>
+  </div>
+</template>
+<script>
   import { defineComponent, ref } from "vue";
+  import Frame from "../components/Frame.vue";
+  import PortalPopup from "../components/PortalPopup.vue";
 
   export default defineComponent({
-    name: "Login",
+    name: "Home",
+    data() {
+      return { isFrameOpen: false };
+    },
+    components: { Frame, PortalPopup },
+    methods: {
+      openFrame() {
+        this.isFrameOpen = true;
+      },
+      closeFrame() {
+        this.isFrameOpen = false;
+      },
+    },
   });
 </script>
 <style scoped>
-  .group-child {
+  .home-child {
+    margin: 0;
     position: absolute;
+    width: 78.75%;
     top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 15.51rem;
-    height: 17.4rem;
+    right: 0%;
+    left: 21.25%;
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    height: 6.38rem;
   }
-  .group-item {
+  .home-item {
     position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 18.5rem;
-    height: 20.3rem;
+    top: 50.69rem;
+    left: 0.06rem;
+    background-color: var(--whale);
+    width: 79.94rem;
+    height: 14.25rem;
   }
-  .group-inner {
+  .home-inner {
     position: absolute;
     top: 0rem;
     left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 21.48rem;
-    height: 23.19rem;
+    background-color: var(--blue-btn);
+    width: 17rem;
+    height: 64.94rem;
+  }
+  .co-perate {
+    margin: 0;
+    position: absolute;
+    top: 1.81rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: var(--font-lexend-zetta);
+    color: var(--white);
+    text-align: center;
+    display: inline-block;
+    width: 13rem;
+    height: 1.94rem;
+  }
+  .vector-icon {
+    position: absolute;
+    top: 6.34rem;
+    left: 3.75rem;
+    width: 9.5rem;
+    height: 0.06rem;
+  }
+  .home-child1 {
+    position: absolute;
+    top: 18.09rem;
+    left: 3.75rem;
+    width: 9.5rem;
+    height: 0.06rem;
+  }
+  .home-child2 {
+    position: absolute;
+    top: 29.84rem;
+    left: 3.75rem;
+    width: 9.5rem;
+    height: 0.06rem;
+  }
+  .group-icon {
+    position: absolute;
+    height: 3.67%;
+    top: 3.08%;
+    bottom: 93.25%;
+    left: calc(50% + 227px);
+    max-height: 100%;
+    width: 16.81rem;
+  }
+  .home2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    letter-spacing: 0.25em;
+    display: flex;
+    align-items: center;
   }
   .rectangle-div {
     position: absolute;
     top: 0rem;
     left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
+    background-color: var(--color-gray);
+    width: 16.94rem;
+    height: 3.25rem;
+  }
+  .vector-icon1 {
+    position: absolute;
+    height: 32.69%;
+    width: 7.38%;
+    top: 26.92%;
+    right: 79.34%;
+    bottom: 40.38%;
+    left: 13.28%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .home1 {
+    position: absolute;
+    top: 7.38rem;
+    left: 0.06rem;
+    width: 16.94rem;
+    height: 3.25rem;
+  }
+  .vector-icon2 {
+    position: absolute;
+    height: 36.54%;
+    width: 7.01%;
+    top: 31.73%;
+    right: 79.15%;
+    bottom: 31.73%;
+    left: 13.84%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .projects {
+    position: absolute;
+    top: 19.13rem;
+    left: 0rem;
+    width: 16.94rem;
+    height: 3.25rem;
+  }
+  .vector-icon3 {
+    position: absolute;
+    height: 38.46%;
+    width: 6.65%;
+    top: 30.77%;
+    right: 79.33%;
+    bottom: 30.77%;
+    left: 14.02%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .my-task {
+    position: absolute;
+    top: 10.63rem;
+    left: 0.06rem;
+    width: 16.94rem;
+    height: 3.25rem;
+  }
+  .vector-icon4 {
+    position: absolute;
+    height: 26.92%;
+    width: 7.3%;
+    top: 32.69%;
+    right: 79.42%;
+    bottom: 40.38%;
+    left: 13.28%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .portfolio {
+    position: absolute;
+    top: 22.38rem;
+    left: 0rem;
+    width: 16.94rem;
+    height: 3.25rem;
+  }
+  .group-icon1 {
+    position: absolute;
+    height: 28.85%;
+    width: 5.9%;
+    top: 34.62%;
+    right: 79.34%;
+    bottom: 36.54%;
+    left: 14.76%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .my-workspace {
+    position: absolute;
+    top: 25.63rem;
+    left: 0.06rem;
+    width: 16.94rem;
+    height: 3.25rem;
+  }
+  .vector-icon5 {
+    position: absolute;
+    height: 42.31%;
+    width: 8.11%;
+    top: 26.92%;
+    right: 78.98%;
+    bottom: 30.77%;
+    left: 12.92%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .milestone {
+    position: absolute;
+    top: 13.88rem;
+    left: 0.06rem;
+    width: 16.94rem;
+    height: 3.25rem;
+  }
+  .vector-icon6 {
+    position: absolute;
+    height: 38.46%;
+    width: 7.18%;
+    top: 25%;
+    right: 79.44%;
+    bottom: 36.54%;
+    left: 13.38%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  .settings {
+    position: absolute;
+    top: 30.88rem;
+    left: 0rem;
+    width: 16.94rem;
+    height: 3.25rem;
+  }
+  .profile-icon {
+    position: absolute;
+    top: 2rem;
+    left: calc(50% + 521px);
+    width: 4.06rem;
+    height: 2.38rem;
+    cursor: pointer;
+  }
+  .welcome-back-user {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: inherit;
+  }
+  .your-progress-in {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: var(--h22-size);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+  .welcome-back-user-parent {
+    position: absolute;
+    width: 43.05%;
+    top: 10.88rem;
+    right: 19.1%;
+    left: 37.85%;
+    height: 4.63rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+    text-align: center;
+    font-size: 2rem;
+    color: var(--grey-txt);
+    font-family: var(--font-lexend-zetta);
+  }
+  .show {
+    position: relative;
+    font-weight: 500;
+  }
+  .bicaret-down-fill-icon {
+    position: relative;
+    width: 0.5rem;
+    height: 0.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .parent {
+    border-radius: var(--br-5xs);
+    background-color: var(--color-gainsboro);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xs) var(--padding-4xs);
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.25rem;
+  }
+  .show-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-xs);
+  }
+  .akar-iconssearch {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .search {
+    flex: 1;
+    position: relative;
+    font-weight: 500;
+  }
+  .akar-iconssearch-parent {
+    flex: 1;
+    border-radius: var(--br-5xs);
+    border: 1px solid var(--color-darkgray);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xs) var(--padding-4xs);
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
+    color: var(--color-darkgray);
+  }
+  .add-customer {
+    position: relative;
+    font-size: var(--text-p-size);
+    font-family: var(--font-montserrat);
+    color: var(--color-white);
+    text-align: left;
+  }
+  .fluentadd-16-filled-parent {
+    cursor: pointer;
+    border: none;
+    padding: var(--padding-5xs) var(--padding-xs);
+    background-color: var(--orange);
+    border-radius: var(--br-5xs);
+    width: 8.69rem;
+    display: flex;
+    flex-direction: row;
     box-sizing: border-box;
-    width: 24.46rem;
-    height: 26.09rem;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-5xs);
   }
-  .group-child1 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
+  .frame-parent {
+    width: 59.19rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+  }
+  .div {
+    background-color: var(--color-white);
+    width: 61.31rem;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-base);
     box-sizing: border-box;
-    width: 27.45rem;
-    height: 28.99rem;
+    align-items: center;
+    justify-content: flex-start;
   }
-  .group-child2 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 30.43rem;
-    height: 31.89rem;
+  .tracking-id {
+    flex: 1;
+    position: relative;
   }
-  .group-child3 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 33.41rem;
-    height: 34.79rem;
+  .tracking-id-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
   }
-  .group-child4 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 36.4rem;
-    height: 37.69rem;
+  .customer-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xs);
   }
-  .group-child5 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 39.38rem;
-    height: 40.59rem;
+  .date-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.44rem;
   }
-  .group-child6 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 42.36rem;
-    height: 43.49rem;
+  .amount-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
   }
-  .group-child7 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 45.35rem;
-    height: 46.39rem;
+  .frame-group {
+    align-self: stretch;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-base);
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-base);
   }
-  .group-child8 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 48.33rem;
-    height: 49.29rem;
+  .matt-dickerson-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
-  .group-child9 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 0px 0px var(--br-xl) 0px;
-    border: 2px solid var(--white);
-    box-sizing: border-box;
-    width: 51.31rem;
-    height: 52.19rem;
+  .delivered-wrapper {
+    margin: 0;
+    border-radius: var(--br-3xl);
+    background-color: var(--color-mintcream);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xs) var(--padding-xs);
+    align-items: center;
+    justify-content: center;
+    font-size: inherit;
+    font-family: inherit;
   }
-  .rectangle-parent {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    width: 51.31rem;
-    height: 52.19rem;
+  .frame-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: var(--text-p-size);
+    color: var(--color-seagreen);
   }
-  .group-child10 {
+  .trash-2-2-icon {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .edit-1-2-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+  }
+  .frame-div {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .frame-container {
+    align-self: stretch;
+    background-color: var(--color-ghostwhite);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-base);
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-base);
+  }
+  .process-wrapper {
+    margin: 0;
+    border-radius: var(--br-3xl);
+    background-color: var(--color-linen);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xs) var(--padding-xs);
+    align-items: center;
+    justify-content: center;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  .frame-wrapper3 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: var(--text-p-size);
+    color: var(--color-chocolate);
+  }
+  .table1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: var(--btn-text-size);
+  }
+  .previous {
+    position: relative;
+    font-weight: 500;
+    text-align: left;
+  }
+  .div15 {
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    width: 0.81rem;
+    height: 0.94rem;
+    flex-shrink: 0;
+  }
+  .wrapper10 {
+    border-radius: var(--br-5xs);
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xs) var(--padding-4xs);
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--color-white);
+  }
+  .wrapper11 {
+    border-radius: var(--br-5xs);
+    background-color: var(--color-gainsboro);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-5xs) var(--padding-4xs);
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--color-black);
+  }
+  .div14 {
+    align-self: stretch;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-base);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-darkgray);
+  }
+  .table {
     position: absolute;
-    top: 0rem;
-    left: 0rem;
-    border-radius: 2px;
-    background-color: var(--white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 21.56rem;
-    height: 41.25rem;
+    width: 76.8%;
+    top: 19.38rem;
+    right: 1.48%;
+    left: 21.72%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: var(--text-p-size);
+    color: var(--color-black);
+    font-family: var(--font-montserrat);
   }
   .copyright-2023 {
     position: absolute;
-    top: 31.44rem;
-    left: calc(50% - 40.79px);
+    top: 57.31rem;
+    left: calc(50% + 131px);
+    font-size: var(--text-p-size);
+    font-family: var(--text-p);
+    color: var(--white);
+    text-align: center;
     display: inline-block;
     width: 5.1rem;
     height: 1rem;
   }
-  .join-us-now {
-    color: var(--orange-btn);
-  }
-  .dont-have-account-container {
-    position: absolute;
-    top: 24.88rem;
-    left: calc(50% - 90.5px);
-    display: inline-block;
-    width: 11.38rem;
-    height: 1rem;
-  }
-  .group-child11 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    left: 0%;
-    border-radius: var(--br-8xs);
-    background-color: var(--orange-btn);
-  }
-  .login1 {
-    position: absolute;
-    top: 0.81rem;
-    left: 3.75rem;
-    font-size: var(--btn-text-size);
-    font-weight: 500;
-    font-family: var(--btn-text);
-    color: var(--white);
-    text-align: center;
-    display: inline-block;
-    width: 10.75rem;
-    height: 1.25rem;
-  }
-  .rectangle-container {
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    position: absolute;
-    height: 7.27%;
-    width: 84.06%;
-    top: 64.85%;
-    right: 8.12%;
-    bottom: 27.88%;
-    left: 7.83%;
-  }
-  .rectangle-input {
-    border: none;
-    background-color: var(--white-txt);
-    position: absolute;
-    height: 60.61%;
-    width: 100%;
-    top: 39.39%;
-    right: 0%;
-    bottom: 0%;
-    left: 0%;
-    border-radius: var(--br-8xs);
-  }
-  .username {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    font-weight: 500;
-    display: inline-block;
-    width: 5.31rem;
-    height: 1.25rem;
-  }
-  .group-div {
-    position: absolute;
-    height: 10%;
-    width: 84.1%;
-    top: 31.67%;
-    right: 7.78%;
-    bottom: 58.33%;
-    left: 8.12%;
-    font-size: var(--btn-text-size);
-    font-family: var(--btn-text);
-  }
-  .rectangle-parent1 {
-    position: absolute;
-    height: 10%;
-    width: 84.1%;
-    top: 44.7%;
-    right: 8.07%;
-    bottom: 45.3%;
-    left: 7.83%;
-    font-size: var(--btn-text-size);
-    font-family: var(--btn-text);
-  }
-  .be-the-part {
-    position: absolute;
-    top: 7.75rem;
-    left: 1rem;
-    text-transform: uppercase;
-    font-family: var(--font-lexend-zetta);
-    display: inline-block;
-    width: 19.13rem;
-    height: 2.44rem;
-  }
-  .rectangle-group {
-    position: absolute;
-    top: 0rem;
-    left: 49.56rem;
-    width: 21.56rem;
-    height: 41.25rem;
-  }
-  .logo {
-    margin: 0;
-    position: absolute;
-    top: 2.38rem;
-    left: 2.38rem;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-family: var(--font-lexend-zetta);
-    color: var(--white);
-    display: inline-block;
-    width: 8.81rem;
-    height: 3.5rem;
-  }
-  .login {
+  .home {
     position: relative;
-    background: linear-gradient(133.19deg, #c8f8ff, #1fa7e1);
+    background-color: var(--white);
     width: 100%;
-    height: 41.25rem;
-    text-align: center;
-    font-size: var(--text-p-size);
-    color: var(--grey-txt);
-    font-family: var(--text-p);
+    height: 64.94rem;
+    text-align: left;
+    font-size: var(--h22-size);
+    color: var(--color-white);
+    font-family: var(--btn-text);
   }
 </style>
